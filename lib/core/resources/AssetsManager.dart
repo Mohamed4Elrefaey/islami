@@ -11,5 +11,12 @@ abstract final class AssetsManager {
   static const String selectedRadioTab = "assets/icons/selectedRadio.svg";
   static const String TimeTab = "assets/icons/time.svg";
   static const String selectedTimeTab = "assets/icons/selectedTime.svg";
+  static const String quranBackground = "assets/images/Background.png";
+  static const String mostResent = "assets/images/most_resent.png";
+  static const String suraNumber = "assets/icons/sura_number.svg";
+  static const String rightCorner = "assets/images/right_corner.png";
+  static const String leftCorner = "assets/images/left_corner.png";
+  static const String bottomMosque = "assets/images/bottom_mosque.png";
+
 
 }
