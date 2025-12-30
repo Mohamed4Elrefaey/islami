@@ -3,14 +3,34 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:islami/core/resources/AssetsManager.dart';
 import 'package:islami/core/resources/ColorsManager.dart';
 import 'package:islami/core/resources/StringsManager.dart';
+import 'package:islami/ui/home/hadith_tab/hadithTab.dart';
+import 'package:islami/ui/home/quran_tab/quranTab.dart';
+import 'package:islami/ui/home/radio_tab/radioTab.dart';
+import 'package:islami/ui/home/sebha_tab/sebhaTab.dart';
+import 'package:islami/ui/home/tima_tab/timeTab.dart';
 
 class Homescreen extends StatefulWidget {
+
+  static const String routeName = "Home_screen";
+
+  const Homescreen({super.key});
+
   @override
   State<Homescreen> createState() => _HomescreenState();
 }
 
+
 class _HomescreenState extends State<Homescreen> {
   int selectedIndex = 0 ;
+
+
+  List<Widget> tabs = [
+    QuranTab(),
+    HadithTab(),
+    SebhaTab(),
+    RadioTab(),
+    TimeTab()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -60,6 +80,7 @@ class _HomescreenState extends State<Homescreen> {
           ),
         ],
       ),
+      body: tabs[selectedIndex],
     );
   }
 }
