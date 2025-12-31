@@ -74,7 +74,7 @@ class _HomescreenState extends State<Homescreen> {
             selectedIcon: SvgPicture.asset(AssetsManager.selectedRadioTab),
           ),
           NavigationDestination(
-            icon: SvgPicture.asset(AssetsManager.TimeTab),
+            icon: SvgPicture.asset(AssetsManager.timeTab),
             label: StringsManager.Time,
             selectedIcon: SvgPicture.asset(AssetsManager.selectedTimeTab),
           ),

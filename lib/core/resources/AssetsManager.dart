@@ -9,7 +9,7 @@ abstract final class AssetsManager {
   static const String selectedSebhaTab = "assets/icons/selectedSebha.svg";
   static const String radioTab = "assets/icons/radio.svg";
   static const String selectedRadioTab = "assets/icons/selectedRadio.svg";
-  static const String TimeTab = "assets/icons/time.svg";
+  static const String timeTab = "assets/icons/time.svg";
   static const String selectedTimeTab = "assets/icons/selectedTime.svg";
   static const String quranBackground = "assets/images/Background.png";
   static const String mostResent = "assets/images/most_resent.png";
@@ -17,6 +17,12 @@ abstract final class AssetsManager {
   static const String rightCorner = "assets/images/right_corner.png";
   static const String leftCorner = "assets/images/left_corner.png";
   static const String bottomMosque = "assets/images/bottom_mosque.png";
+  static const String hadethBack = "assets/images/hadeth_back.png";
+  static const String pageLeftCorner = "assets/images/page_item_left_corner.png";
+  static const String pageRightCorner = "assets/images/Page_item_right_corner.png";
+  static const String hadithMosque = "assets/images/hadeth-mosque.png";
+  static const String hadithItemBack = "assets/images/HadithCard_back.png";
+
 
 
 }
