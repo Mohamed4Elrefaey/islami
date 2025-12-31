@@ -41,6 +41,7 @@ class _HomescreenState extends State<Homescreen> {
         labelBehavior: NavigationDestinationLabelBehavior.onlyShowSelected,
         labelTextStyle: WidgetStateProperty.resolveWith((state) {
           return TextStyle(
+            fontFamily: "Janna LT",
             color: ColorsManager.onPrimaryColor,
             fontSize: 12,
             fontWeight: FontWeight.w700,

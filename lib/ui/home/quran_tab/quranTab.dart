@@ -36,6 +36,7 @@ class QuranTab extends StatelessWidget {
               TextField(
                 cursorColor: ColorsManager.onPrimaryColor,
                 style: TextStyle(
+                  fontFamily: "Janna LT",
                   fontSize: 16,
                   fontWeight: FontWeight.w700,
                   color: ColorsManager.onPrimaryColor,
@@ -68,6 +69,7 @@ class QuranTab extends StatelessWidget {
                   hint: Text(
                     StringsManager.suraName,
                     style: TextStyle(
+
                       fontWeight: FontWeight.w700,
                       fontSize: 16,
                       color: ColorsManager.onPrimaryColor,
@@ -81,6 +83,7 @@ class QuranTab extends StatelessWidget {
                 child: Text(
                   StringsManager.mostRecently,
                   style: TextStyle(
+                    fontFamily: "Janna LT",
                     fontWeight: FontWeight.w700,
                     fontSize: 16,
                     color: ColorsManager.onPrimaryColor,
@@ -97,6 +100,7 @@ class QuranTab extends StatelessWidget {
                 child: Text(
                   StringsManager.surasList,
                   style: TextStyle(
+                    fontFamily: "Janna LT",
                     fontWeight: FontWeight.w700,
                     fontSize: 16,
                     color: ColorsManager.onPrimaryColor,

@@ -22,6 +22,7 @@ class HadethDetailsScreen extends StatelessWidget {
         centerTitle: true,
         title: Text("Hadeth ${hadeth.hadethNum}"),
         titleTextStyle: TextStyle(
+          fontFamily: "Janna LT",
           color: ColorsManager.primaryColor,
           fontSize: 20,
           fontWeight: FontWeight.w700,
@@ -42,6 +43,7 @@ class HadethDetailsScreen extends StatelessWidget {
                       Text(
                         hadeth.title,
                         style: TextStyle(
+                          fontFamily: "Janna LT",
                           color: ColorsManager.primaryColor,
                           fontSize: 24,
                           fontWeight: FontWeight.w700,
@@ -56,6 +58,7 @@ class HadethDetailsScreen extends StatelessWidget {
                       child: Text(
                         hadeth.hadethContent,
                         style: TextStyle(
+                          fontFamily: "Janna LT",
                           fontWeight: FontWeight.w700,
                           fontSize: 20,
                           color: ColorsManager.primaryColor,

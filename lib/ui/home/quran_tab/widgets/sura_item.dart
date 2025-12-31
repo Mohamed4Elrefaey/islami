@@ -25,6 +25,7 @@ class SuraItem extends StatelessWidget {
               Text(
                 sura.suraNumber.toString(),
                 style: TextStyle(
+                  fontFamily: "Janna LT",
                   fontWeight: FontWeight.w500,
                   fontSize: 16,
                   color: ColorsManager.onPrimaryColor,
@@ -40,6 +41,7 @@ class SuraItem extends StatelessWidget {
                 Text(
                   sura.suraNameEn,
                   style: TextStyle(
+                    fontFamily: "Janna LT",
                     fontWeight: FontWeight.w700,
                     fontSize: 20,
                     color: ColorsManager.onPrimaryColor,
@@ -48,6 +50,7 @@ class SuraItem extends StatelessWidget {
                 Text(
                   "${sura.suraVerses} Verses",
                   style: TextStyle(
+                    fontFamily: "Janna LT",
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
                     color: ColorsManager.onPrimaryColor,
@@ -59,6 +62,7 @@ class SuraItem extends StatelessWidget {
           Text(
             sura.suraNameAr,
             style: TextStyle(
+              fontFamily: "Janna LT",
               fontWeight: FontWeight.w700,
               fontSize: 20,
               color: ColorsManager.onPrimaryColor,

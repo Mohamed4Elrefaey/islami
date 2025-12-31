@@ -23,6 +23,7 @@ class MostResentItem extends StatelessWidget {
                 Text(
                   "Al-Anbiya",
                   style: TextStyle(
+                    fontFamily: "Janna LT",
                     color: ColorsManager.secondaryColor,
                     fontSize: 24,
                     fontWeight: FontWeight.w700,
@@ -31,6 +32,7 @@ class MostResentItem extends StatelessWidget {
                 Text(
                   "الأنبياء",
                   style: TextStyle(
+                    fontFamily: "Janna LT",
                     color: ColorsManager.secondaryColor,
                     fontSize: 24,
                     fontWeight: FontWeight.w700,
@@ -39,6 +41,7 @@ class MostResentItem extends StatelessWidget {
                 Text(
                   "112 Verses",
                   style: TextStyle(
+                    fontFamily: "Janna LT",
                     color: ColorsManager.secondaryColor,
                     fontSize: 14,
                     fontWeight: FontWeight.w700,

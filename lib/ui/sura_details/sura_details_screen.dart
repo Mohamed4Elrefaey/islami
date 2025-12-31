@@ -27,6 +27,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
         centerTitle: true,
         title: Text(sura.suraNameEn),
         titleTextStyle: TextStyle(
+          fontFamily: "Janna LT",
           color: ColorsManager.primaryColor,
           fontSize: 20,
           fontWeight: FontWeight.w700,
@@ -47,6 +48,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                       Text(
                         sura.suraNameAr,
                         style: TextStyle(
+                          fontFamily: "Janna LT",
                           color: ColorsManager.primaryColor,
                           fontSize: 24,
                           fontWeight: FontWeight.w700,
@@ -67,6 +69,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                           child: Text(
                               suraText,
                               style: TextStyle(
+                                fontFamily: "Janna LT",
                                 fontWeight: FontWeight.w700,
                                 fontSize: 20,
                                 color: ColorsManager.primaryColor,
