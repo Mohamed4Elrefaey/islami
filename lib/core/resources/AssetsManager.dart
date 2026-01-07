@@ -22,7 +22,11 @@ abstract final class AssetsManager {
   static const String pageRightCorner = "assets/images/Page_item_right_corner.png";
   static const String hadithMosque = "assets/images/hadeth-mosque.png";
   static const String hadithItemBack = "assets/images/HadithCard_back.png";
-
+  static const String onboardingImage1 = "assets/images/Onboarding1.png";
+  static const String onboardingImage2 = "assets/images/Onboarding2.png";
+  static const String onboardingImage3 = "assets/images/Onboarding3.png";
+  static const String onboardingImage4 = "assets/images/Onboarding4.png";
+  static const String onboardingImage5 = "assets/images/Onboarding5.png";
 
 
 }

@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:islami/ui/hadith/screen/hadeth_details_screen.dart';
-import 'package:islami/ui/home/hadith_tab/hadithTab.dart';
 import 'package:islami/ui/home/screen/homeScreen.dart';
+import 'package:islami/ui/onboarding/onboardingScreen.dart';
 import 'package:islami/ui/sura_details/sura_details_screen.dart';
 
-void main() {
+import 'core/remote/local/prefsManager.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await PrefsManager.init();
   runApp(MyApp());
 }
 
@@ -16,11 +20,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Flutter Demo",
-      initialRoute: Homescreen.routeName,
+      initialRoute: PrefsManager.isOnboardingSeen()
+          ? Homescreen.routeName
+          : OnBoardingScreen.routeName,
       routes: {
         Homescreen.routeName: (_) => Homescreen(),
         SuraDetailsScreen.routeName: (_) => SuraDetailsScreen(),
         HadethDetailsScreen.routeName: (_) => HadethDetailsScreen(),
+        OnBoardingScreen.routeName: (_) => OnBoardingScreen(),
       },
     );
   }
