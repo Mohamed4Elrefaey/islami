@@ -36,21 +36,32 @@ class HadethDetailsScreen extends StatelessWidget {
               padding: const EdgeInsets.only(top: 18, left: 18, right: 18),
               child: Column(
                 children: [
-                  Row(
+                  Stack(
                     children: [
-                      Image.asset(AssetsManager.leftCorner),
-                      Spacer(),
-                      Text(
-                        hadeth.title,
-                        style: TextStyle(
-                          fontFamily: "Janna LT",
-                          color: ColorsManager.primaryColor,
-                          fontSize: 24,
-                          fontWeight: FontWeight.w700,
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Image.asset(AssetsManager.leftCorner),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 40),
+                        child: Expanded(
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              hadeth.title,
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 22,
+                                color: ColorsManager.primaryColor
+                              ),
+                            ),
+                          ),
                         ),
                       ),
-                      Spacer(),
-                      Image.asset(AssetsManager.rightCorner),
+                      Align(
+                        alignment: Alignment.topRight,
+                        child: Image.asset(AssetsManager.rightCorner),
+                      ),
                     ],
                   ),
                   Expanded(

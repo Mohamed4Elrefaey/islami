@@ -59,7 +59,7 @@ class _SebhaTabState extends State<SebhaTab> {
               InkWell(
                 onTap: () {
                   setState(() {
-                    angle += pi / 6;
+                    angle += 45 * pi /180  ;
                     if (counter == 1) {
                       HandleList();
                       counter = 33;
@@ -68,68 +68,77 @@ class _SebhaTabState extends State<SebhaTab> {
                     }
                   });
                 },
-                child: Container(
-                  alignment: Alignment.center,
-                  height: height * 0.48,
-                  width: double.infinity,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        top: 0.0,
-                        left: 0.0,
-                        right: 0.0,
-                        child: Center(
-                          child: Image.asset(
-                            AssetsManager.sebhaHead,
-                            width: width * 0.3,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        top: 74,
-                        left: 0.0,
-                        right: 0.0,
-                        child: Transform.rotate(
-                          angle: angle,
-                          child: Center(
-                            child: Image.asset(
-                              AssetsManager.sebhaBody,
-                              fit: BoxFit.cover,
+                child: SizedBox(
+                  height: height * 0.5,
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      final h = constraints.maxHeight ;
+                      final w = constraints.maxWidth;
+                      return Stack(
+                        children: [
+                          Positioned(
+                            top: 0.0,
+                            left: 0.0,
+                            right: 0.0,
+                            child: Center(
+                              child: Image.asset(
+                                AssetsManager.sebhaHead,
+                                width: w * 0.35,
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 0.0,
-                        right: 0.0,
-                        bottom: 220,
-                        child: Center(
-                          child: Text(
-                            ZekrList.AlAzkar[0].zekr,
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 36,
-                              color: ColorsManager.onPrimaryColor,
+                          Positioned(
+                            top: h *0.15,
+                            left: 0.0,
+                            right: 0.0,
+                            child: AnimatedRotation(
+                              curve: Curves.easeOutCirc,
+                              turns: angle,
+                              duration: Duration(
+                                milliseconds: 400
+                              ),
+
+                              child: Center(
+                                child: Image.asset(
+                                  AssetsManager.sebhaBody,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 0.0,
-                        right: 0.0,
-                        bottom: 140,
-                        child: Center(
-                          child: Text(
-                            counter.toString(),
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 36,
-                              color: ColorsManager.onPrimaryColor,
+                          Positioned(
+                            left: 0.0,
+                            right: 0.0,
+                            bottom: h * 0.41,
+                            child: Center(
+                              child: Text(
+                                ZekrList.AlAzkar[0].zekr,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 36,
+                                  color: ColorsManager.onPrimaryColor,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                    ],
+                          Positioned(
+                            left: 0.0,
+                            right: 0.0,
+                            bottom: h*0.30 ,
+                            child: Center(
+                              child: Text(
+                                counter.toString(),
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 36,
+                                  color: ColorsManager.onPrimaryColor,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      );
+                    },
                   ),
                 ),
               ),
