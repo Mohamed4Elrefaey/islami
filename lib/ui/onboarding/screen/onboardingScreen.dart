@@ -6,7 +6,7 @@ import 'package:islami/ui/onboarding/onboardingItems.dart';
 import 'package:islami/ui/onboarding/widgets/onboardingPage.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../core/remote/local/prefsManager.dart';
+import '../../../core/remote/local/prefsManager.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});

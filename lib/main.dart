@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/ui/hadith/screen/hadeth_details_screen.dart';
 import 'package:islami/ui/home/screen/homeScreen.dart';
-import 'package:islami/ui/onboarding/onboardingScreen.dart';
+import 'package:islami/ui/onboarding/screen/onboardingScreen.dart';
 import 'package:islami/ui/sura_details/sura_details_screen.dart';
 
 import 'core/remote/local/prefsManager.dart';

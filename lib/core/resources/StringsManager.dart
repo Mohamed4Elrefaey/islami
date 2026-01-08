@@ -23,4 +23,6 @@ abstract final class StringsManager {
   static const String back = "Back";
   static const String next = "Next";
   static const String finish = "Finish";
+  static const String sebhaTitle = "سَبِّحِ اسْمَ رَبِّكَ الأعلى";
+
 }
